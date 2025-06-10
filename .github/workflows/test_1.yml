@@ -23,6 +23,8 @@ jobs:
 
   others:
     runs-on: ubuntu-latest
+    # este job depende que se ejecute el job hola
+    needs: hola
     steps:
       - name: LS
         run: ls -al
